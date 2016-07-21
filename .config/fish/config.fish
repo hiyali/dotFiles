@@ -7,7 +7,7 @@ set -gx OMF_PATH "/home/salamjan/.local/share/omf"
 # Load oh-my-fish configuration.
 source $OMF_PATH/init.fish
 
-set -gx JAVA_HOME /work/zulu8.13.0.5-jdk8.0.72-linux_x64
+set -gx JAVA_HOME /work/zulu8.15.0.1-jdk8.0.92-linux_x64
 
 set -gx PATH $PATH $JAVA_HOME/bin /lida/apps/vuze
 
@@ -22,7 +22,7 @@ end
 
 function  kar
   kill -9  (lsof -i :5555 |grep -i ssh |  awk '{print $2}' | uniq)
-  ssh  -fCND 5555 salamjan@52.79.111.194
+  ssh  -fCND 5555 salamjan@face
 end
 
 alias clip='xclip -sel clip'
