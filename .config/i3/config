@@ -195,12 +195,12 @@ bindsym $mod+Shift+Control+p exec gnome-screenshot
 
 bindsym $mod+l exec rofi -show run -lines 5 -eh 2 -width 100  -padding 800 -opacity "75" -bw 0 -bc "$bg-color" -bg "$bg-color" -fg "$text-color" -hlbg "$bg-color" -hlfg "#9575cd" -font "System San Francisco Display 18"
 
-exec_always --no-startup-id feh --bg-scale /home/yusup/.walls/wallhaven-45742.jpg
+exec_always --no-startup-id feh --bg-scale /home/salamjan/.walls/wallhaven-41221.jpg
 bindsym $mod+Shift+x exec i3lock --color "#475263"
 
 
 bar {
-    status_command   python3 /home/yusup/i3bar.py
+    status_command   python3 /home/salamjan/i3bar.py
     i3bar_command i3bar -t
 
     font pango: System San Francisco Display 10, FontAwesome 10
