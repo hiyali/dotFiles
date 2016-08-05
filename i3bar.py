@@ -8,7 +8,7 @@ status = Status(logfile='/tmp/i3pystatus.log')
 #                          ^-- calendar week
 status.register("clock",
                 hints={"separator": False, "separator_block_width": 0},
-    format="\uf017 %a %-d %b %H:%M KW%V")
+    format="\uf017 %a %-d %b %H:%M Week%V")
 
 # Shows the average load of the last minute and the last 5 minutes
 # (the default value for format is used)
