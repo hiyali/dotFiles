@@ -58,11 +58,11 @@ status.register("pulseaudio",
     format= '  \uf001'  + " {volume}   ",)
 
 
-status.register("spotify",
-                color = "#2EBD59",
-                status = {'playing': '\uf144', 'paused': '\uf1bc'},
-                format = "  {status} - {title}",
-                hints={"separator": False, "separator_block_width": 0})
+#status.register("spotify",
+#                color = "#2EBD59",
+#                status = {'playing': '\uf144', 'paused': '\uf1bc'},
+#                format = "  {status} - {title}",
+#                hints={"separator": False, "separator_block_width": 0})
 
 status.register("pomodoro",
                 log_level=True,

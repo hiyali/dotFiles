@@ -18,7 +18,7 @@ set $mod Mod4
 
 
 # font for window titles. ISO 10646 = Unicode
-font pango: M+ 1m, FontAwesome, Ionicons, 12
+font pango: M+ 1m, FontAwesome 12, Ionicons, 12
 
 # This font is widely installed, provides lots of unicode glyphs, right-to-left
 # text rendering and scalability on retina/hidpi displays (thanks to pango).
@@ -35,7 +35,8 @@ font pango: M+ 1m, FontAwesome, Ionicons, 12
 floating_modifier $mod
 
 # start a terminal
-bindsym $mod+Return exec terminal
+# bindsym $mod+Return exec terminal
+bindsym $mod+Return exec i3-sensible-terminal
 
 # kill focused window
 bindsym $mod+Shift+apostrophe kill
@@ -201,7 +202,8 @@ bindsym $mod+Shift+x exec i3lock --color "#475263"
 
 bar {
     status_command   python3 /home/salamjan/i3bar.py
-    i3bar_command i3bar -t
+    i3bar_command i3bar
+    # i3bar_command i3bar -t
 
     font pango: System San Francisco Display 10, FontAwesome 10
 
