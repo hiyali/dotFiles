@@ -13,8 +13,8 @@ nnoremap <Leader>n :bn<CR>
 nnoremap <Leader>p :bp<CR>
 nnoremap <Leader>bf :bf<CR>
 nnoremap <Leader>bl :bl<CR>
-nnoremap <Leader>d :w<CR>:bd<CR>
-nnoremap <Leader>bd :bd!<CR>
+nnoremap <Leader>bw :w<CR>:bd<CR>
+nnoremap <Leader>d :bd!<CR>
 " new buffer/tab
 nnoremap <Leader>e :enew<CR>
 
