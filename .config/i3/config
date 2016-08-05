@@ -222,5 +222,5 @@ exec --no-startup-id compton -f
 exec --no-startup-id conky -c ~/.conkyrc
 
 
-# gaps inner 0
-# gaps outer 0
+gaps inner 0
+gaps outer 0

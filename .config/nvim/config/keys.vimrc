@@ -9,11 +9,11 @@ nmap <Leader>k gk
 
 " buffer keys
 nnoremap <Leader>bb :b#<CR>
-nnoremap <Leader>bn :bn<CR>
-nnoremap <Leader>bp :bp<CR>
+nnoremap <Leader>n :bn<CR>
+nnoremap <Leader>p :bp<CR>
 nnoremap <Leader>bf :bf<CR>
 nnoremap <Leader>bl :bl<CR>
-nnoremap <Leader>bw :w<CR>:bd<CR>
+nnoremap <Leader>d :w<CR>:bd<CR>
 nnoremap <Leader>bd :bd!<CR>
 " new buffer/tab
 nnoremap <Leader>e :enew<CR>
@@ -23,8 +23,8 @@ nnoremap <Leader>w< <C-w><
 nnoremap <Leader>w> <C-w>>
 nnoremap <Leader>w- <C-w>-
 nnoremap <Leader>w+ <C-w>+
-nnoremap <Leader>ws :split<CR>
-nnoremap <Leader>wv :vsplit<CR>
+nnoremap <Leader>s :split<CR>
+nnoremap <Leader>v :vsplit<CR>
 nnoremap <Leader>wx :close<CR>
 
 " command mode maps
