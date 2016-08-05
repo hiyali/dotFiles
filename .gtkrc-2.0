@@ -1,0 +1,20 @@
+# DO NOT EDIT! This file will be overwritten by LXAppearance.
+# Any customization should be done in ~/.gtkrc-2.0.mine instead.
+
+gtk-theme-name="Numix"
+gtk-icon-theme-name="Paper"
+gtk-font-name="SFNS Display 10"
+gtk-cursor-theme-name="DMZ-White"
+gtk-cursor-theme-size=24
+gtk-toolbar-style=GTK_TOOLBAR_BOTH_HORIZ
+gtk-toolbar-icon-size=GTK_ICON_SIZE_LARGE_TOOLBAR
+gtk-button-images=1
+gtk-menu-images=1
+gtk-enable-event-sounds=1
+gtk-enable-input-feedback-sounds=1
+gtk-xft-antialias=1
+gtk-xft-hinting=1
+gtk-xft-hintstyle="hintfull"
+gtk-xft-rgba="rgb"
+gtk-color-scheme="tooltip_fg_color:#FFFFFF\nlink_color:#4080fb\nbase_color:#2B2B2C\nselected_fg_color:#FFFFFF\ntext_color:#F3F3F5\nbg_color:#353638\ninsensitive_bg_color:#434446\ntooltip_bg_color:#343434\nselected_bg_color:#4080fb\nfg_color:#F3F3F5\n"
+include "/home/yusup/.gtkrc-2.0.mine"

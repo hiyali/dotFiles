@@ -1,1 +1,2 @@
-feh  --bg-scale '/home/yusup/.walls/wallhaven-45742.jpg' 
+#!/bin/sh
+feh  --bg-scale '/home/salamjan/.walls/wallhaven-41221.jpg' 
