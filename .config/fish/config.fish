@@ -18,9 +18,17 @@ source $OMF_PATH/init.fish
 # Load oh-my-fish configuration.
 ### source $OMF_PATH/init.fish
 
-### set -gx JAVA_HOME /work/zulu8.15.0.1-jdk8.0.92-linux_x64
-
-### set -gx PATH $PATH $JAVA_HOME/bin /lida/apps/vuze
+set -gx JAVA_HOME /work/zulu8.15.0.1-jdk8.0.92-linux_x64
+set -gx PATH $JAVA_HOME/bin \
+        $HOME/OLD/lida/apps/vuze \
+        /work/android-studio/gradle/gradle-2.10/bin \
+        /work/android-sdk-linux \
+        /work/android-sdk-linux/tools \
+        /work/android-sdk-linux/platform-tools \
+        /work/android-sdk-linux/build-tools/23.0.0/ \
+        $PATH
+# set -gx ANDROID_HOME /work/android-studio/ /work/android-studio/bin/
+set -gx ANDROID_HOME /work/android-sdk-linux/
 
 
 ### alias nautilus='nautilus --no-desktop &'
