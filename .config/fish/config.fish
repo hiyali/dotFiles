@@ -26,7 +26,8 @@ set -gx PATH $JAVA_HOME/bin \
         /work/android-sdk-linux/tools \
         /work/android-sdk-linux/platform-tools \
         /work/android-sdk-linux/build-tools/23.0.0/ \
-        $PATH
+        $PATH \
+        ~/.config/composer/vendor/bin
 # set -gx ANDROID_HOME /work/android-studio/ /work/android-studio/bin/
 set -gx ANDROID_HOME /work/android-sdk-linux/
 

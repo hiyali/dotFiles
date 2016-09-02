@@ -1,1 +1,1 @@
-/home/salamjan/.local/share/omf/themes/bobthefish/fish_prompt.fish
+/home/salamjan/.local/share/omf/themes/nelsonjchen/fish_prompt.fish
