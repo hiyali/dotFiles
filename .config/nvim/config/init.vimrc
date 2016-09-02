@@ -6,6 +6,7 @@ Plug 'nanotech/jellybeans.vim'
 Plug 'goatslacker/mango.vim'
 Plug 'croaker/mustang-vim'
 Plug 'w0ng/vim-hybrid'
+Plug 'mhartington/oceanic-next'
 
 " general
 " Plug 'ervandew/supertab'

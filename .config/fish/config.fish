@@ -44,6 +44,11 @@ function  kar
   ssh  -fCND 8888 salamjan@seoul
 end
 
+function  xkar
+  kill -9  (lsof -i :8888 |grep -i ssh |  awk '{print $2}' | uniq)
+  ssh -i ~/.ssh/amazon.pem -fCND 8888 ubuntu@xiyali-aws
+end
+
 alias clip='xclip -sel clip'
 
 
