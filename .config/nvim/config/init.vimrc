@@ -69,4 +69,7 @@ Plug 'kana/vim-textobj-fold'
 Plug 'kana/vim-textobj-indent'
 Plug 'kana/vim-textobj-function'
 
+" multicursor
+Plug 'terryma/vim-multiple-cursors'
+
 call plug#end()

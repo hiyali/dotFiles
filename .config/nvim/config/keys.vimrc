@@ -10,7 +10,7 @@ nmap <Leader>k gk
 " buffer keys
 nnoremap <Leader>bb :b#<CR>
 nnoremap <Leader>n :bn<CR>
-nnoremap <Leader>p :bp<CR>
+nnoremap <Leader>q :bp<CR>
 nnoremap <Leader>bf :bf<CR>
 nnoremap <Leader>bl :bl<CR>
 nnoremap <Leader>bw :w<CR>:bd<CR>

@@ -63,13 +63,16 @@ alias vim="nvim"
 alias vi="nvim"
 
 
+set -gx MAVEN_OPTS "-DsocksProxyHost=127.0.0.1 -DsocksProxyPort=8888"
+set -gx BOOT_JVM_OPTIONS "-DsocksProxyHost=127.0.0.1 -DsocksProxyPort=8888"
+
+export NVIM_TUI_ENABLE_TRUE_COLOR=1
 
 # #######################
 # for oh-my-fish
 # #######################
 #
-set -gx MAVEN_OPTS "-DsocksProxyHost=127.0.0.1 -DsocksProxyPort=8888"
-set -gx BOOT_JVM_OPTIONS "-DsocksProxyHost=127.0.0.1 -DsocksProxyPort=8888"
+
 #
 #
 # Path to your oh-my-fish.
