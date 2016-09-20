@@ -17,4 +17,3 @@ gtk-xft-hinting=1
 gtk-xft-hintstyle="hintfull"
 gtk-xft-rgba="rgb"
 gtk-color-scheme="tooltip_fg_color:#FFFFFF\nlink_color:#4080fb\nbase_color:#2B2B2C\nselected_fg_color:#FFFFFF\ntext_color:#F3F3F5\nbg_color:#353638\ninsensitive_bg_color:#434446\ntooltip_bg_color:#343434\nselected_bg_color:#4080fb\nfg_color:#F3F3F5\n"
-include "/home/yusup/.gtkrc-2.0.mine"

@@ -34,12 +34,6 @@ set -gx ANDROID_HOME /work/android-sdk-linux/
 
 ### alias nautilus='nautilus --no-desktop &'
 
-
-function  goog
-  kill -9  (lsof -i :8888 |grep -i ssh |  awk '{print $2}' | uniq)
-  ssh  -fCND 8888  yusup@lida
-end
-
 function  kar
   kill -9  (lsof -i :8888 |grep -i ssh |  awk '{print $2}' | uniq)
   ssh  -fCND 8888 salamjan@seoul
