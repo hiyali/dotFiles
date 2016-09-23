@@ -1,0 +1,16 @@
+*
+
+!.config/
+!Screenshot/
+!.walls/
+
+!.gitignore
+!.xinitrc
+!.xinputrc
+!.xsession
+!README.md
+!.gtkrc-2.0
+!.fehbg
+!.conkyrc
+!.compton.conf
+
