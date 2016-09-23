@@ -102,22 +102,24 @@ bindsym $mod+a focus parent
 #bindsym $mod+d focus child
 
 
-set $firefox "&#xf269;Firefox"
-set $term "&#xf120;Term"
-set $chromey "&#xf268;Chromey"
-set $idea "&#xf092;Idea"
-set $emacs "&#xf1d4;Lispy"
-set $obs "&#xf03d;OBS"
-set $read "&#xf1a0;Read"
-set $spot "&#xf1bc;Spot"
+set $firefox "&#xf269; Firefox"
+set $term "&#xf120; Term"
+set $chrome "&#xf1a0; Chrome"
+set $idea "&#xf299; Idea"
+set $nvim "&#xf044; Nvim"
+set $salam "&#xf155; Salam"
+set $obs "&#xf03d; OBS"
+set $read "&#xf06d; Read"
+set $spot "&#xf1bc;
 
 # switch to workspace
 bindsym $mod+Shift+f workspace  $firefox
 bindsym $mod+Shift+Return workspace $term
-bindsym $mod+Shift+c workspace $chromey
+bindsym $mod+Shift+c workspace $chrome
 bindsym $mod+Shift+m workspace $idea
-bindsym $mod+Shift+l workspace $emacs
 bindsym $mod+Shift+o workspace $obs
+bindsym $mod+Shift+n workspace $nvim
+bindsym $mod+Shift+s workspace $salam
 bindsym $mod+Shift+z workspace $read
 bindsym $mod+Shift+1 workspace $spot
 
@@ -128,9 +130,10 @@ bindsym $mod+0 workspace 10
 # move focused container to workspace
 bindsym $mod+Shift+Control+f move container to workspace $firefox
 bindsym $mod+Shift+Control+Return move container to workspace $term
-bindsym $mod+Shift+Control+c  move container to workspace $chromey
+bindsym $mod+Shift+Control+c  move container to workspace $chrome
 bindsym $mod+Shift+Control+m move container to workspace $idea
-bindsym $mod+Shift+Control+l move container to workspace $emacs
+bindsym $mod+Shift+Control+n move container to workspace $nvim
+bindsym $mod+Shift+Control+s move container to workspace $salam
 bindsym $mod+Shift+Control+o move container to workspace $obs
 bindsym $mod+Shift+Control+z move container to workspace $read
 bindsym $mod+Shift+Control+1 move container to workspace $spot
