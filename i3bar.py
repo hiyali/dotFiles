@@ -8,7 +8,7 @@ status = Status(logfile='/tmp/i3pystatus.log')
 #                          ^-- calendar week
 status.register("clock",
                 hints={"separator": False, "separator_block_width": 0},
-    format="\uf017 %a %-d %b %H:%M Week%V")
+                format="\uf017 %a %-d %b %H:%M Week%V")
 
 # Shows the average load of the last minute and the last 5 minutes
 # (the default value for format is used)
@@ -20,14 +20,14 @@ status.register("load",
 # Shows your CPU temperature, if you have a Intel CPU
 status.register("temp",
                 hints={"separator": False, "separator_block_width": 0},
-    format="\uf17c {temp:.0f}°C   ",)
+                format="\uf17c {temp:.0f}°C   ",)
 
 
 # Displays whether a DHCP client is running
 status.register("runwatch",
-    name="\uf065 DHCP  ",
+                name="\uf065 DHCP  ",
                 hints={"separator": False, "separator_block_width": 0},
-    path="/var/run/dhclient*.pid",)
+                path="/var/run/dhclient*.pid",)
 
 # Shows the address and up/down state of eth0. If it is up the address is shown in
 # green (the default value of color_up) and the CIDR-address is shown
@@ -37,9 +37,9 @@ status.register("runwatch",
 #
 # Note: the network module requires PyPI package netifaces
 status.register("network",
-    interface="eth0",
+                interface="eth0",
                 hints={"separator": False, "separator_block_width": 0},
-    format_up="\uf124 {v4cidr}  ",)
+                format_up="\uf124 {v4cidr}  ",)
 
 
 # Shows disk usage of /
@@ -47,15 +47,15 @@ status.register("network",
 # 42/128G [86G]
 status.register("disk",
                 hints={"separator": False, "separator_block_width": 0},
-    path="/",
-    format="\uf1c0 [{avail}G]   ",)
+                path="/",
+                format="\uf1c0 [{avail}G]   ",)
 
 # Shows pulseaudio default sink volume
 #
 # Note: requires libpulseaudio from PyPI
 status.register("pulseaudio",
                 hints={"separator": False, "separator_block_width": 0},
-    format= '  \uf001'  + " {volume}   ",)
+                format= '  \uf001'  + " {volume}   ",)
 
 
 #status.register("spotify",

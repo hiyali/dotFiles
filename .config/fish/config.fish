@@ -62,6 +62,9 @@ set -gx BOOT_JVM_OPTIONS "-DsocksProxyHost=127.0.0.1 -DsocksProxyPort=8888"
 
 export NVIM_TUI_ENABLE_TRUE_COLOR=1
 
+export LANG=en_US.UTF-8
+export LC_ALL=en_US.UTF-8
+
 # #######################
 # for oh-my-fish
 # #######################
