@@ -209,7 +209,7 @@ bar {
     i3bar_command i3bar
     # i3bar_command i3bar -t
 
-    font pango: System San Francisco Display 10, FuraMono 10
+    font pango: System San Francisco Display 10, FontAwesome 10
 
     colors {
       background $bg-color
