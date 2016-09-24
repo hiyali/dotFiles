@@ -26,7 +26,7 @@ end
 
 function  akar
   kill -9  (lsof -i :8888 |grep -i ssh |  awk '{print $2}' | uniq)
-  ssh -i ~/.ssh/amazon.pem -fCND 8888 ubuntu@xiyali-aws
+  ssh -i ~/.ssh/aws.pem -fCND 8888 ubuntu@xiyali-aws
 end
 
 function  gkar
