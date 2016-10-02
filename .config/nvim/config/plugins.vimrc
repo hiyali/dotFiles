@@ -1,6 +1,9 @@
 filetype plugin indent on
 
 " deoplete
+" salamjan 2016.10.1
+let g:python3_host_prog = '/usr/bin/python3'
+
 let g:deoplete#enable_at_startup = 1
 let g:deoplete#disable_auto_complete = 0
 autocmd InsertLeave,CompleteDone * if pumvisible() == 0 | pclose | endif
