@@ -7,6 +7,7 @@ Plug 'goatslacker/mango.vim'
 Plug 'croaker/mustang-vim'
 Plug 'w0ng/vim-hybrid'
 Plug 'mhartington/oceanic-next'
+Plug 'morhetz/gruvbox'
 
 " general
 Plug 'ervandew/supertab'

@@ -16,7 +16,7 @@ if (has("termguicolors"))
 endif
 
 " Theme
-colorscheme jellybeans " OceanicNext
+colorscheme gruvbox " OceanicNext
 set background=dark
 """"""""""""
 
