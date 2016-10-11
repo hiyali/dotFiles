@@ -9,7 +9,7 @@ Plug 'w0ng/vim-hybrid'
 Plug 'mhartington/oceanic-next'
 
 " general
-" Plug 'ervandew/supertab'
+Plug 'ervandew/supertab'
 Plug 'benekastah/neomake'
 Plug 'Shougo/deoplete.nvim'
 Plug 'scrooloose/nerdtree', { 'on':  'NERDTreeToggle' }
