@@ -28,9 +28,7 @@ let g:neomake_error_sign = {
 let g:neomake_open_list = 2
 
 let g:neomake_javascript_enabled_makers = ['eslint']
-
-" set background=dark
-" colorscheme apprentice " salam
+  autocmd BufWritePost * Neomake
 
 " make background transparent
 hi Normal ctermbg=NONE
