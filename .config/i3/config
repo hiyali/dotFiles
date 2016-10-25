@@ -207,7 +207,7 @@ bindsym $mod+Shift+x exec i3lock --color "#475263" -i ~/.walls/wallhaven-369726.
 bar {
     status_command   python3 /home/salamjan/i3bar.py
     i3bar_command i3bar
-    position top
+    # position top
     # i3bar_command i3bar -t
 
     font pango: System San Francisco Display 10, FontAwesome 10
