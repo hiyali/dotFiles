@@ -4,6 +4,7 @@ call plug#begin('~/.config/nvim/plugged')
 Plug 'w0ng/vim-hybrid' "middle color / dark
 Plug 'mhartington/oceanic-next' "nice color / dark
 Plug 'morhetz/gruvbox' "middle color / brown
+Plug 'dracula/vim'
 
 " general
 Plug 'ervandew/supertab'
@@ -47,6 +48,7 @@ Plug 'marijnh/tern_for_vim', { 'do': 'npm install' }
 Plug 'digitaltoad/vim-jade'
 Plug 'elzr/vim-json'
 Plug 'mxw/vim-jsx'
+Plug 'leafgarland/typescript-vim'
 
 " elixir
 Plug 'elixir-lang/vim-elixir'
