@@ -1,13 +1,9 @@
 call plug#begin('~/.config/nvim/plugged')
 
 " colorschemes
-Plug 'junegunn/seoul256.vim'
-Plug 'nanotech/jellybeans.vim'
-Plug 'goatslacker/mango.vim'
-Plug 'croaker/mustang-vim'
-Plug 'w0ng/vim-hybrid'
-Plug 'mhartington/oceanic-next'
-Plug 'morhetz/gruvbox'
+Plug 'w0ng/vim-hybrid' "middle color / dark
+Plug 'mhartington/oceanic-next' "nice color / dark
+Plug 'morhetz/gruvbox' "middle color / brown
 
 " general
 Plug 'ervandew/supertab'
