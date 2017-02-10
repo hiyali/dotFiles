@@ -59,6 +59,9 @@ Plug 'othree/html5.vim'
 Plug 'hail2u/vim-css3-syntax'
 Plug 'othree/csscomplete.vim'
 Plug 'groenewege/vim-less'
+Plug 'isRuslan/vim-es6'
+Plug 'posva/vim-vue'
+Plug 'sentientmonkey/vim-lispy'
 
 " text objects
 Plug 'wellle/targets.vim'
