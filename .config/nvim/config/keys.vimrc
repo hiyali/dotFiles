@@ -1,11 +1,8 @@
 " map Leader
 let mapleader = ","
+
 " keep backward f search, remapping it to ,;
 nnoremap <Leader>; ,
-
-" in-line scrolling
-nmap <Leader>j gj
-nmap <Leader>k gk
 
 " buffer keys
 nnoremap <Leader>bb :b#<CR>
@@ -27,13 +24,20 @@ nnoremap <Leader>s :split<CR>
 nnoremap <Leader>v :vsplit<CR>
 nnoremap <Leader>wx :close<CR>
 
+" for commentary
+nnoremap " :Commentary<CR>
+vnoremap " :Commentary<CR>
+" :7,17Commentary
+
 " multiline moving
-vnoremap <A-k> :m '<-2<CR>gv=gv
-nnoremap <A-j> :m .+1<CR>==
-nnoremap <A-k> :m .-2<CR>==
-inoremap <A-j> <Esc>:m .+1<CR>==gi
-inoremap <A-k> <Esc>:m .-2<CR>==gi
-vnoremap <A-j> :m '>+1<CR>gv=gv
+" <A-j>  ∆
+" <A-k>  ˚
+nnoremap ∆ :m .+1<CR>==
+nnoremap ˚ :m .-2<CR>==
+vnoremap ∆ :m '>+1<CR>gv=gv
+vnoremap ˚ :m '<-2<CR>gv=gv
+inoremap ∆ <Esc>:m .+1<CR>==gi
+inoremap ˚ <Esc>:m .-2<CR>==gi
 
 " command mode maps
 " better command-line window scrolling with <C-P> & <C-N>
@@ -45,9 +49,7 @@ cnoremap <expr> %% getcmdtype() == ':' ? expand('%:h').'/' : '%%'
 
 " CtrlP keys
 nnoremap <Leader>pp :CtrlP<CR>
-nnoremap <Leader>pf :CtrlP<CR>
 nnoremap <Leader>pm :CtrlPMRUFiles<CR>
-nnoremap <Leader>pr :CtrlPMRUFiles<CR>
 nnoremap <Leader>pb :CtrlPBuffer<CR>
 
 " Function keys
@@ -56,9 +58,9 @@ nnoremap <F3> :NERDTreeToggle<CR>
 nnoremap <F5> :source $HOME/.config/nvim/init.vim<CR>
 nnoremap <F6> :set hlsearch!<CR>
 nnoremap <F7> :UndotreeToggle<CR>
-nnoremap <F8> :Geeknote<CR>
+" nnoremap <F8> :Geeknote<CR>
 " indent whole file according to syntax rules
-noremap <F9> gg=G
+" noremap <F9> gg=G
 
 " CTRL-U in insert mode deletes a lot.  Use CTRL-G u to first break undo,
 " so that you can undo CTRL-U after inserting a line break.
@@ -113,9 +115,9 @@ nmap <Leader><Space>p :lprev<CR>
 " folding
 nmap <Leader>f zf%
 " Folding {{{
-set foldenable			" enable folding
-set foldlevelstart=1	" start folding then we are 10 blocks deep
-set foldnestmax=5		" 10 nested fold max
+set foldenable			  " enable folding
+set foldlevelstart=2	" start folding then we are 10 blocks deep
+set foldnestmax=5		  " 10 nested fold max
 set foldmethod=indent	" fold based on indent level
 "}}}
 
