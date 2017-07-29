@@ -29,6 +29,10 @@ function  akar
   ssh -i ~/.ssh/aws.pem -fCND 8888 ubuntu@xiyali-aws
 end
 
+
+
+####################### initial ######################
+
 function  gkar
   kill -9  (lsof -i :8888 |grep -i ssh |  awk '{print $2}' | uniq)
   ssh -i ~/.ssh/gcs -fCND 8888 hiyali920@xiyali-gcs
@@ -52,7 +56,6 @@ function shut-kill
   kill -9 (ps -ef | grep -i '\-\-dns' | awk '{print $2}' | uniq)
 end
 
-alias clip='xclip -sel clip'
 
 
 alias tmux="env TERM=screen-256color-bce tmux"
@@ -64,14 +67,18 @@ alias cnpm="npm --registry=https://registry.npm.taobao.org \
 alias vim="nvim"
 alias vi="nvim"
 
+export LANG=en_US.UTF-8
+export LC_ALL=en_US.UTF-8
+
+########################### initial done ############################
+
+
+alias clip='xclip -sel clip'
+export NVIM_TUI_ENABLE_TRUE_COLOR=1
 
 set -gx MAVEN_OPTS "-DsocksProxyHost=127.0.0.1 -DsocksProxyPort=8888"
 set -gx BOOT_JVM_OPTIONS "-DsocksProxyHost=127.0.0.1 -DsocksProxyPort=8888"
 
-export NVIM_TUI_ENABLE_TRUE_COLOR=1
-
-export LANG=en_US.UTF-8
-export LC_ALL=en_US.UTF-8
 
 # #######################
 # for oh-my-fish
