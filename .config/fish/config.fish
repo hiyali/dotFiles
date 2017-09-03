@@ -45,6 +45,10 @@ set -q XDG_DATA_HOME
 source $OMF_PATH/init.fish
 
 # Go
-export GOROOT=/usr/local/go
-export GOPATH=$HOME/.go
-export PATH=$PATH:$GOPATH/bin:$GOROOT/bin
+
+set GOROOT /usr/local/go
+export GOROOT
+set GOPATH $HOME/.go
+export GOPATH
+set PATH $PATH $GOPATH/bin $GOROOT/bin
+
