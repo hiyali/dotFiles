@@ -102,22 +102,24 @@ bindsym $mod+a focus parent
 #bindsym $mod+d focus child
 
 
-set $firefox "&#xf269;Firefox"
-set $term "&#xf120;Term"
-set $chromey "&#xf268;Chromey"
-set $idea "&#xf092;Idea"
-set $emacs "&#xf1d4;Lispy"
-set $obs "&#xf03d;OBS"
-set $read "&#xf1a0;Read"
-set $spot "&#xf1bc;Spot"
+set $salam "&#xf155; Salam"
+set $term "&#xf120; Term"
+set $chrome "&#xf1a0; Chrome"
+set $firefox "&#xf269; Firefox"
+set $idea "&#xf299; Idea"
+set $nvim "&#xf044; Nvim"
+set $obs "&#xf03d; OBS"
+set $read "&#xf06d; Read"
+set $spot "&#xf1bc;
 
 # switch to workspace
-bindsym $mod+Shift+f workspace  $firefox
+bindsym $mod+Shift+s workspace $salam
 bindsym $mod+Shift+Return workspace $term
-bindsym $mod+Shift+c workspace $chromey
+bindsym $mod+Shift+c workspace $chrome
+bindsym $mod+Shift+f workspace  $firefox
 bindsym $mod+Shift+m workspace $idea
-bindsym $mod+Shift+l workspace $emacs
 bindsym $mod+Shift+o workspace $obs
+bindsym $mod+Shift+n workspace $nvim
 bindsym $mod+Shift+z workspace $read
 bindsym $mod+Shift+1 workspace $spot
 
@@ -126,11 +128,12 @@ bindsym $mod+9 workspace 9
 bindsym $mod+0 workspace 10
 
 # move focused container to workspace
-bindsym $mod+Shift+Control+f move container to workspace $firefox
+bindsym $mod+Shift+Control+s move container to workspace $salam
 bindsym $mod+Shift+Control+Return move container to workspace $term
-bindsym $mod+Shift+Control+c  move container to workspace $chromey
+bindsym $mod+Shift+Control+c  move container to workspace $chrome
+bindsym $mod+Shift+Control+f move container to workspace $firefox
 bindsym $mod+Shift+Control+m move container to workspace $idea
-bindsym $mod+Shift+Control+l move container to workspace $emacs
+bindsym $mod+Shift+Control+n move container to workspace $nvim
 bindsym $mod+Shift+Control+o move container to workspace $obs
 bindsym $mod+Shift+Control+z move container to workspace $read
 bindsym $mod+Shift+Control+1 move container to workspace $spot
@@ -193,17 +196,18 @@ bindsym XF86AudioLowerVolume exec amixer -D pulse sset Master 5%-
 bindsym XF86AudioMute exec "amixer -D pulse set Master toggle"
 
 bindsym $mod+Shift+Control+p exec gnome-screenshot
+# bindsym $mod+Shift+Control+p exec (gnome-screenshot -a &) sleep 0.1 && xdotool mousemove 100 100 mousedown 1 mousemove 500 500 mouseup 1
 
 bindsym $mod+l exec rofi -show run -lines 5 -eh 2 -width 100  -padding 100 -opacity "75" -bw 0 -bc "$bg-color" -bg "$bg-color" -fg "$text-color" -hlbg "$bg-color" -hlfg "#9575cd" -font "System San Francisco Display 16"
 
-exec_always --no-startup-id feh --bg-scale /home/salamjan/.walls/wallhaven-41221.jpg
-bindsym $mod+Shift+x exec i3
-lock --color "#475263"
+exec_always --no-startup-id feh --bg-scale /home/salamjan/.walls/wallhaven-165102.jpg
+bindsym $mod+Shift+x exec i3lock --color "#475263" -i ~/.walls/wallhaven-369726.jpg
 
 
 bar {
     status_command   python3 /home/salamjan/i3bar.py
     i3bar_command i3bar
+    # position top
     # i3bar_command i3bar -t
 
     font pango: System San Francisco Display 10, FontAwesome 10
@@ -211,6 +215,7 @@ bar {
     colors {
       background $bg-color
       separator #757575
+      statusline #DCDCDC
       #                  border             background         text
       focused_workspace  $bg-color          $bg-color          $text-color
       inactive_workspace $inactive-bg-color $inactive-bg-color $inactive-text-color

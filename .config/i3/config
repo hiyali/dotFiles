@@ -205,7 +205,7 @@ bindsym $mod+Shift+x exec i3lock --color "#475263" -i ~/.walls/wallhaven-369726.
 
 
 bar {
-    status_command   python3 /home/salamjan/i3bar.py
+    status_command   python3 ~/.config/i3/i3bar.py
     i3bar_command i3bar
     # position top
     # i3bar_command i3bar -t
@@ -224,11 +224,13 @@ bar {
 }
 
 
-#exec --no-startup-id i3-msg 'workspace  $firefox;exec firefox'
+exec --no-startup-id i3-msg 'workspace  $chrome;exec google-chrome-stable'
+exec --no-startup-id i3-msg 'workspace  $term;exec i3-sensible-terminal'
 exec --no-startup-id  xinput --set-prop  8 "Device Accel Constant Deceleration" 2.2
 exec --no-startup-id  xinput --set-prop 8 "Device Accel Velocity Scaling" 2.2
 exec --no-startup-id compton -f
-exec --no-startup-id conky -c ~/.conkyrc
+exec --no-startup-id conky -c ~/.config/i3/.conkyrc
+# exec --no-startup-id dpkg-reconfigure keyboard-configuration -u
 
 
 # gaps inner 0
