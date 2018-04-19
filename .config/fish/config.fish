@@ -40,7 +40,7 @@ function git-proxy-set
   git config --global http.proxy socks5h://127.0.0.1:5555
 end
 function git-proxy-clear
-  git config --global http.proxy ''
+  git config --global --unset http.proxy
 end
 
 
