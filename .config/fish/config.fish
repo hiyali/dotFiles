@@ -13,6 +13,7 @@ alias vim="nvim"
 alias vi="nvim"
 
 
+# Google tunnel
 function  gkar
   kill -9  (lsof -i :5555 |grep -i ssh |  awk '{print $2}' | uniq)
   ssh -i ~/.ssh/gcs -fCND 5555 hiyali920@hiyali-gcs
@@ -21,6 +22,7 @@ function kar-kill
   kill -9  (lsof -i :5555 |grep -i ssh |  awk '{print $2}' | uniq)
 end
 
+# Sshuttle all proxy
 function  gshut
   kill -9 (ps -ef | grep -i '\-\-dns' | awk '{print $2}' | uniq)
   sshuttle --dns -vDr hiyali920@hiyali-gcs 0.0.0.0/0 -e "ssh -A -i ~/.ssh/gcs"
@@ -33,6 +35,13 @@ function shut-kill
   kill -9 (ps -ef | grep -i '\-\-dns' | awk '{print $2}' | uniq)
 end
 
+# Git proxy
+function git-proxy-set
+  git config --global http.proxy socks5h://127.0.0.1:5555
+end
+function git-proxy-clear
+  git config --global http.proxy ''
+end
 
 
 
