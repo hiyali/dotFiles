@@ -14,9 +14,11 @@ set -x DOCKER_CERT_PATH /Users/salamhiyali/.boot2docker/certs/boot2docker-vm
 set -x DOCKER_TLS_VERIFY 1
 # - Go
 set PATH $PATH /usr/local/go/bin
-export PATH
 # - Sqlite
 set -g fish_user_paths "/usr/local/opt/sqlite/bin" $fish_user_paths
+# - Android
+set PATH $PATH /Users/salamhiyali/Library/Android/sdk/platform-tools
+export PATH
 
 # ============== Aliases
 # - nvim
@@ -32,22 +34,18 @@ alias tmux="env TERM=screen-256color-bce tmux"
 
 # ============== Personally free network
 # - Google
-function gcs-connect
-  cs-shutdown
-  ssh -i ~/.ssh/gcs -fCND 5555 ubuntu@hiyali-acs
+function ssh-gcs-hiyali
+  ssh-conn-shutdown
+  ssh -i ~/.ssh/hiyali-gcs -fCND 5555 hiyali920@hiyali-gcs
 end
 # - Amazon
-function acs-pomm-connect
-  cs-shutdown
+function ssh-acs-pomm
+  ssh-conn-shutdown
   ssh -i ~/.ssh/acs.pem -fCND 5555 ubuntu@pomm-acs
 end
-function acs-hiyali-connect
-  cs-shutdown
-  ssh -i ~/.ssh/hiyali-acs.pem -fCND 5555 ubuntu@hiyali-acs
-end
 # - shutdown
-function cs-shutdown
-  kill -9 (lsof -i :5555 |grep -i ssh | awk '{print $2}' | uniq)
+function ssh-conn-shutdown
+  kill -9 (lsof -i :5555 | grep -i ssh | awk '{print $2}' | uniq)
 end
 # - for Git
 function git-proxy
@@ -61,15 +59,15 @@ function git-proxy-clear
   git config --global --remove-section http
 end
 # - Sshuttle all proxy
-function  acs-hiyali-shut
-  kill -9 (ps -ef | grep -i '\-\-dns' | awk '{print $2}' | uniq)
-  sshuttle --dns -vDr ubuntu@hiyali-acs 0.0.0.0/0 -e "ssh -A -i ~/.ssh/gcs"
+function shut-gcs-hiyali
+  shut-conn-shutdown
+  sshuttle --dns -vDr hiyali920@hiyali-gcs 0/0 -e "ssh -A -i ~/.ssh/hiyali-gcs"
 end
-function  acs-hiyali-shutv
-  kill -9 (ps -ef | grep -i '\-\-dns' | awk '{print $2}' | uniq)
-  sshuttle -r ubuntu@hiyali-acs 0.0.0.0/0 -vv -e "ssh -A -i ~/.ssh/gcs" --dns
+function shutv-gcs-hiyali
+  shut-conn-shutdown
+  sshuttle --dns -r hiyali920@hiyali-gcs 0/0 -vv -e "ssh -A -i ~/.ssh/hiyali-gcs"
 end
-function cs-shut-shutdown
+function shut-conn-shutdown
   kill -9 (ps -ef | grep -i '\-\-dns' | awk '{print $2}' | uniq)
 end
 
